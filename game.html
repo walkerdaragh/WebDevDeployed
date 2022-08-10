@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Game</title>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Required links for Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"rel="stylesheet">
+		<scriptsrc="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- link to the CSS file and Google fonts -->
+		<link href="css/style.css" rel="stylesheet">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+		<!-- link to the Javascript
+		<script src="js/myscript.js"></script> -->
+<!-- https://unsplash.com/photos/eo5Hrzyb4D0 -->
+	</head>
+	<body>
+		<div class="container-fluid>">
+			<!-- Header -->
+				<div class="col-sm-12 header">
+					<h1>Game</h1>
+					<h2>A Tough Walnut to Follow</h2>
+				</div>
+
+
+			<!-- nav -->
+			<div id="navbar">
+					<a href="index.html">Home</a>
+					<a href="localscenery.html">Local Scenary</a>
+					<a href="sport.html">Sport</a>
+					<a href="announcements.html">Announcements</a>
+					<a class="active" href="game.html">Game</a>
+					<a href="contactus.html">Contact Us</a>
+			</div>
+
+				<!-- Main content -->
+				<div class="content">
+				<div class="row middle">
+                    	<h2 id="coin">Coin Flip</h2>
+						<div id="theflip">What did you get</div>
+						<!-- https://unsplash.com/photos/Ld0ktDeje8I -->
+						<!-- The image is now a button with javascript attatched -->
+                        <button id="clicker" type="button"><img src="images/game/coin.png" class="rounded-circle" width="800" height="800" alt="Coin"/></button>
+                     	<script src="js/script.js"></script>
+				 		</div>
+			    	</div>
+				</div>
+			<!-- Footer -->
+			<div class="row">
+				<div class="col-sm-12 footer">
+					<ul id="noBulletPoints">
+						<li>Walnut Bay County Council</li>
+						<li>Registered Website</li>
+						<a href="https://www.facebook.com/">Facebook</a>
+						<a href="https://www.instagram.com/accounts/login/">instagram</a>
+						<a href="https://www.twitter.com/login">Twitter</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+			<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+			navbar.classList.remove("sticky");
+			}
+			}
+			</script>
+	</body>
+</html>

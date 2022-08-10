@@ -1,0 +1,158 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Get bootstrap to work-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"/></script>
+
+	  <!-- google font links -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	  <!--Montserrat, Sacramento, Satisfy font import-->
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+
+	  <!-- CSS Stylesheet-->
+      <link rel="stylesheet" href="css/style.css">
+
+	  <!-- Page Title -->
+      <title>Sport</title>
+
+      <meta name="description" content="Sport">
+      <meta name="keywords" content="Sport">
+   </head>
+
+   <body>
+      <div class="container-fluid">
+
+         <!--header-->
+         <div class="row">
+            <div class="header">
+              <img src="images/walnutBay/WalnutBayLogo.png"id="logo" alt="logo">
+               <h1>Walnut Bay</h1>
+               <h2 id="header">A Tough Walnut to Follow</h2>
+            </div>
+
+		<!--nav-->
+            <div id="navbar">
+               <a href="index.html">Home</a>
+               <a href="localscenery.html">Local Scenery</a>
+               <a class="active" href="sport.html">Sport</a>			<!--Active-->
+               <a href="announcements.html">Announcements</a>
+               <a href="games.html">Games</a>
+               <a href="contactus.html">Contact Us</a>
+            </div>
+
+			<!--3 column row for page layout-->
+            <div class="row">
+               <!--left column page layout-->
+               <div class="col-sm-2 middle-left">
+                  <!-- put left side of background image here-->
+               </div>
+
+               <!-- middle column for page layout-->
+               <div class="col-sm-8 middle">
+					<!-- Content div -->
+					<div class="content">
+					<!-- Football row -->
+                     <div class="row">
+						<!-- Column size = 3 for text -->
+                        <div class="col-sm-3">
+                           <h2>Football</h2>
+                           <p id="sport-text">There are four football teams in our area for all age groups - young children
+                              to senior adults. Spanning across many levels, there is a team for everyone.
+                              Our football season begins in February and ends in November, finishing up for the
+                              Winter break. If you would like to get involved please contact football@walnutbay.com
+                           </p>
+                        </div>
+						<!-- Column size = 5 for image -->
+                        <div class="col-sm-5">
+                           <img src="images/home/football.png" alt="Football" width="640" height="350">
+                        </div>
+                     </div>
+					 <br>
+					 <!-- Football row -->
+                     <div class="row">
+						<!-- Column size = 4 for text -->
+                        <div class="col-sm-3">
+                           <h2>GAA</h2>
+                           <p id="sport-text">GAA is Ireland's traditional sport, with the first game of Gaelic Football under GAA rules
+							  first played way back in 1885. With Gaelic Football, Hurling and Camogie, there is an Irish
+							  sport available for everyone. There are three Gaelic Football teams in Walnut Bay - two which
+							  cater for all ages, while we have one dedicated Senior Team.
+                           </p>
+                        </div>
+						<!-- Column size = 8 for image -->
+                        <div class="col-sm-5">
+                           <img src="images/home/gaa.png" alt="GAA" width="640" height="350">
+                        </div>
+                     </div>
+					 <br>
+					 <!-- Athletics row -->
+                     <div class="row">
+						<!-- Column size = 3 for text -->
+                        <div class="col-sm-3">
+                           <h2>Athletics</h2>
+                           <p id="sport-text">In Walnut Bay, we have a very popular Athletics Club - Walnut Harriers.
+						   Walnut Harriers are very active, with a running club who meet up three times a week, an
+						   athletics division, and their very own 800 meter running track. Walnut Harriers also participate
+						   in 5k, 10, half-marathon, and marathon races throughout the year.
+                           </p>
+                        </div>
+						<!-- Column size = 5 for image -->
+                        <div class="col-sm-5">
+                           <img src="images/home/athletics.png" alt="Athletics" width="640" height="350">
+                        </div>
+                     </div>
+                     <!-- end of middle column layout-->
+                  </div>
+			</div>
+
+                  <div class="col-sm-2 middle-right">
+                     <!-- put right side of background image here-->
+                  </div>
+
+
+               </div>
+            </div>
+			</div>
+
+			<!-- Footer -->
+			<div class="row">
+				<!-- Footer column -->
+				<div class="col-sm-12 footer">
+					<!-- to remove list bullet point id name -->
+					<ul id="noBulletPoints">
+						<li>Walnut Bay County Council</li>
+						<li>Registered Website</li>
+						<a href="https://www.facebook.com/">Facebook</a> |<!--anchor link to Facebook -->
+						<a href="https://www.instagram.com/accounts/login/">Instagram</a> | <!--anchor link to Instagram -->
+						<a href="https://twitter.com/login">Twitter</a>  <!--anchor link to Twitter -->
+					</ul>
+				</div> <!-- Footer column closed -->
+			</div><!-- row  closed -->
+
+         </div>
+      </div>
+
+	  <!-- Javascript for sticky navbar - works across all pages once script referenced -->
+      <script>
+         window.onscroll = function() {myFunction()};
+
+         var navbar = document.getElementById("navbar");
+         var sticky = navbar.offsetTop;
+
+         function myFunction() {
+         	if (window.pageYOffset >= sticky) {
+         			navbar.classList.add("sticky")
+         			} else {
+         			navbar.classList.remove("sticky");
+         			}
+         }
+      </script>
+
+   </body>
+</html>

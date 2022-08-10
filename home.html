@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en" dir="ltr">
+   <head>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+	  <!-- Get bootstrap to work-->
+      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet">
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"/></script>
+
+	  <!-- google font links -->
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+      <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+	  <!--Montserrat, Sacramento, Satisfy font import-->
+	  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+	  <!-- CSS Stylesheet-->
+    <link rel="stylesheet" href="css/style.css">
+
+	  <!-- Page Title -->
+      <title>Home</title>
+
+	  <meta name="description" content="Home">
+      <meta name="keywords" content="Home">
+	</head>
+
+	<body>
+    <div class="container-fluid">
+
+    <!--header-->
+    <div class="row">
+		<div class="header">
+      <img src="images/walnutBay/WalnutBayLogo.png"id="logo" alt="logo">
+			<h1>Walnut Bay</h1>
+			<h2 id="header">A Tough Walnut to Follow</h2>
+		</div>
+
+    <!--nav-->
+    <div id="navbar">
+        <a class="active" href="index.html">Home</a>	<!--Active-->
+        <a href="localscenery.html">Local Scenery</a>
+        <a href="sport.html">Sport</a>
+        <a href="announcements.html">Announcements</a>
+        <a href="game.html">Game</a>
+        <a href="contactus.html">Contact Us</a>
+    </div>
+
+    <!--3 column row for page layout-->
+    <div class="row">
+
+    <!--left column page layout-->
+    <div class="col-sm-2 middle-left">
+		<!-- Background image was meant to be here but decided against it -->
+    </div>
+
+    <!-- middle column for page layout-->
+    <div class="col-sm-8 middle">
+	  <!-- Content div -->
+		<div class="content">
+	  <br>
+	  <!-- Home paragraph introduction -->
+      <div class="home-paragraph">
+        <h2>Welcome to Walnut Bay</h2>
+        <p>	Welcome to the Walnut Bay community site. Walnut Bay has a vibrant, diverse community,
+			with plenty to do and plenty to see. Please take the time to browse the site, with
+			Local Scenery, Sport, Announcements, and Games to see. If you would like to contact us
+			please visit the Contact Us page.
+        </p>
+      </div>
+	  <br>
+      <!-- Slideshow container -->
+      <div class="slideshow-container">
+         <!-- DIRECT TO LOCAL SCENERY -->
+         <div class="mySlides">
+            <div class="numbertext">1 / 6</div>
+            <a href="localscenery.html">
+            <img src="images/home/localscenery.png" style="width:100%"></a>
+            <div class="text">Local Scenery</div>
+         </div>
+         <!-- DIRECT TO SPORT -->
+         <div class="mySlides">
+            <div class="numbertext">2 / 6</div>
+            <a href="sport.html">
+            <img src="images/home/gaa.png" style="width:100%"></a>
+            <div class="text">Sport</div>
+         </div>
+         <!-- DIRECT TO ANNOUNCEMENTS -->
+         <div class="mySlides">
+            <div class="numbertext">3 / 6</div>
+            <a href="announcements.html">
+            <img src="images/home/announcements.png" style="width:100%"></a>
+            <div class="text">Announcements</div>
+         </div>
+         <div class="mySlides">
+            <div class="numbertext">4 / 6</div>
+            <a href="game.html">
+            <img src="images/game/gameB.png" style="width:100%"></a>
+            <div class="text">Game</div>
+         </div>
+         <div class="mySlides">
+            <div class="numbertext">5 / 6</div>
+            <a href="contactus.html">
+            <img src="images/home/contactus.png" style="width:100%" width="640" height="350"></a>
+            <div class="text">Contact Us</div>
+         </div>
+         <div class="mySlides">
+            <div class="numbertext">6 / 6</div>
+            <a href="home.html">
+            <img src="images/home/walnutbay.png" style="width:100%"></a>
+            <div class="text"></div>
+         </div>
+
+         <!-- Function to go to previous or next slide - calls javascript function plusSlides -->
+         <a class="prev" onclick="plusSlides(-1)"><</a>
+         <a class="next" onclick="plusSlides(1)">></a>
+      </div>
+
+	  <br>
+      <!-- Dots for navigating to slide # -->
+      <div style="text-align:center">
+         <span class="dot" onclick="currentSlide(1)"></span>
+         <span class="dot" onclick="currentSlide(2)"></span>
+         <span class="dot" onclick="currentSlide(3)"></span>
+         <span class="dot" onclick="currentSlide(4)"></span>
+         <span class="dot" onclick="currentSlide(5)"></span>
+         <span class="dot" onclick="currentSlide(6)"></span>
+      </div>
+
+      <br>
+
+
+
+      <!--right column page layout-->
+      <div class="col-sm-2  middle-right">
+		<!-- Background image was meant to be here but decided against it -->
+      </div>
+	  </div>
+
+	  </div>
+	  </div>
+	  </div>
+	  </div>
+
+	<!-- Footer -->
+    <div class="row">
+		<!-- Footer column -->
+		<div class="col-sm-12 footer">
+			<!-- to remove list bullet point id name -->
+			<ul id="noBulletPoints">
+                <li>Walnut Bay County Council</li>
+                <li>Registered Website</li>
+                <a href="https://www.facebook.com/">Facebook</a> |<!--anchor link to Facebook -->
+                <a href="https://www.instagram.com/accounts/login/">Instagram</a> | <!--anchor link to Instagram -->
+                <a href="https://twitter.com/login">Twitter</a>  <!--anchor link to Twitter -->
+            </ul>
+		</div> <!-- Footer column closed -->
+    </div><!-- row  closed -->
+
+      <!--JavaScript-->
+      <script>
+		<!-- Side index = 1 -->
+         let slideIndex = 1;
+         showSlides(slideIndex);
+
+		 <!-- Function to progress to next slides -->
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+
+		 <!-- Shows current slide index -->
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+
+		 <!-- Show slide function for current index -->
+         function showSlides(n) {
+           let i;
+           let slides = document.getElementsByClassName("mySlides");
+           let dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}
+           if (n < 1) {slideIndex=slides.length} for (i=0; i
+         < slides.length; i++) { slides[i].style.display="none" ; } for (i=0; i
+         < dots.length; i++) { dots[i].className=dots[i].className.replace(" active" ,"" ); } slides[slideIndex-1].style.display="block" ; dots[slideIndex-1].className +=" active" ; }
+      </script>
+
+	  <!-- Javascript for sticky navbar - works across all pages once script referenced -->
+      <script>
+         window.onscroll = function() {myFunction()};
+
+         var navbar = document.getElementById("navbar");
+         var sticky = navbar.offsetTop;
+
+         function myFunction() {
+         	if (window.pageYOffset >= sticky) {
+         			navbar.classList.add("sticky")
+         			} else {
+         			navbar.classList.remove("sticky");
+         			}
+         }
+      </script>
+
+   </body>
+</html>

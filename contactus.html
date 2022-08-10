@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+          <meta charset="utf-8">
+          <!-- Get bootstrap to work-->
+          <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"rel="stylesheet">
+          <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+          <!-- goole font links -->
+          <link rel="preconnect" href="https://fonts.googleapis.com">
+          <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+          <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+          <!-- Css Style Sheet-->
+          <link rel="stylesheet" href="css/style.css">
+          <!-- Tite of the Page -->
+          <title>Contact Us</title>
+
+  </head>
+  <body>
+        <div class="container-fluid"> <!--container -->
+
+                   <div class="col-sm-12 header"> <!--header -->
+                              <img src="images/walnutBay/WalnutBayLogo.png"id="logo" alt="logo">   <!--logo image -->
+                              <h1> Walnut Bay</h1>  <!--Name of Location-->
+                              <h2> A Tough Walnut to Follow </h2> <!--Tagline for location-->
+
+                  </div><!-- header close  -->
+
+                  <div id=navbar>
+                                        <!-- <img src="images/dlMap/WalnutBayLogo.png"id="logo" alt="logo"> -->
+                              <a href="index.html">Home</a>  <!--anchor tag for connecting pages-->
+                              <a href="localscenery.html" >Local Scenery</a><!--anchor tag for connecting pages-->
+                              <a href="sport.html" >Sport</a> <!--anchor tag for connecting pages-->
+                              <a href="announcements.html">Announcement</a> <!--anchor tag for connecting pages-->
+                                <a href="game.html" >Game</a><!--anchor tag for connecting pages-->
+                              <a class="active" href="contactus.html">Contact Us</a> <!--Page on will show highlighted on page-->
+                  </div>
+
+                 <div class="row">   <!--3 col row-->
+                      <div class="col-sm-2 middle-left">   <!-- Middle Righ Column row-->
+                        <!-- <img id="sideImage" src="images/town/dlHarbour1.jpg" class=" float-left" alt="..."> -->
+                      </div> <!-- middleLeft closed -->
+                      <div class="col-sm-8 middle">    <!-- Middle of the Page and Column row -->
+                        <div class="content">
+
+
+                              <br>
+                              <label><h4>Please Fill in your details below:</h4> </label><br> <br>
+                              <!-- trying to figure out best form linking -->
+                              <!-- <form id="formContent"   onsubmit="return formValidate()" method="post" required > -->
+                              <!-- <form class="formContent"  action= "mailto: x21150117@student.ncirl.ie " onsubmit=" return validateForm()" method="post" required > -->
+
+                                    <!-- <form class="formContent" action="" method="post"> -->
+                              <!-- <form class="formContent" onsubmit="return validate();" method="post" > -->
+                              <form class="formContent"  action= "mailto: x21150117@student.ncirl.ie " onsubmit=" return validateForm()" method="post" required >
+                                        <label>First Name: </label> <!-- naming box --><br>
+                                                <input id="fName" type="text" name="firstName">
+                                        <label id="fnMissing">First Name Missing</label> <!-- label for pop up message is input is missing -->
+                                               <br>
+                                        <label>Surname: </label><!-- naming box --><br>
+                                                <input id="Surname" type="text" name="Surname">  <!-- label for pop up message is input is missing -->
+                                        <label id="surMissing">Surname Missing</label>
+                                                <br>
+                                        <label>Email Address: </label><!-- naming box --><br>
+                                                <input id="email"type="text" name="email" >
+                                        <label id="emailMissing">Email Missing</label> <!-- label for pop up message is input is missing -->
+                                        <label id="invalidEmail">Invalid Email Address</label><!-- label for pop up message is input is invalid -->
+                                        <label id="validEmail">Valid</label>   <!-- label for pop up message is input is valid -->
+                                              <br>
+
+                                        <!-- Button will show if email inputed is valid or invalid and will connect to labels and JS -->
+                                        <button onclick="validateEmail()"type="button" name="button">Validate Email</button>
+                                                <br>
+                                        <label>Contact Number: </label><br> <!-- naming box -->
+                                                <!-- Drop down box for user to pick their country phone code -->
+                                                <select  name="AreaCode">
+                                                        <option>+353</option>
+                                                        <option>+49</option>
+                                                        <option>+852</option>
+                                                        <option>+1</option>
+                                                        <option>+55</option>
+                                                        <option>+27</option>
+                                                        <option>+44</option>
+                                                </select>
+                                                        <input id="contactNo" type="text" name="contactNo" value="">
+                                                        <label id="contactNoMissing"> Number is Missing</label>  <!-- label for pop up message is input is missing -->
+                                                        <label id="contactNoShort">Need to be Longer than 6</label><!-- label for pop up message is input is shorter than 6 characters-->
+                                                        <label id="contactNoLong">Need to be shorter than 11</label><!-- label for pop up message is input is longer than 10 characters-->
+
+                                        <h4>Address</h4>
+
+                                       <label>Address Line One: </label> <!-- naming box --><br>
+                                              <input id="address1" type="text" name="addressline1" value="">
+                                       <label id="address1Missing"> Line 1 missing</label> <!-- label for pop up message is input is missing -->
+                                               <br>
+                                       <label>Address Line Two: </label><!-- naming box --><br>
+                                             <input id="address2" type="text" name="addressline2" value="">
+                                       <label id="address2Missing"> Line 2 missing</label><br> <!-- label for pop up message is input is missing -->
+
+                                       <label>Eircode</label><!-- naming box --><br>
+                                             <input id="eircode" type="text" name="eircode" value="">
+                                             <label id="eircodeMissing">Eircode missing</label><!-- label for pop up message is input is missing -->
+                                        <br>
+                                        <label>County:</label><!-- naming box --><br>
+                                        <!-- Drop down box for user to pick their country -->
+                                               <select name="Country">
+                                                      <option>Ireland</option>
+                                                      <option>Europe</option>
+                                                      <option>Asia</option>
+                                                      <option>America</option>
+                                                      <option>South America</option>
+                                                      <option>Africa</option>
+                                                      <option>Uk</option>
+                                             </select>
+
+
+                                          <!-- Comment section -->
+                                         <br>
+                                        <label> Message </label><br><!-- naming box -->
+                                            <!-- comment section only shows 4 rows, and 50 is the width   -->
+                                                <textarea name="Message" rows="4" cols="50">
+                              Please leave a message....
+                                                </textarea><br>
+                                          <!-- NewsLetter Section -->
+                                      <div id="newsLetter">
+                                                      <label>Do you wish to receive our New Letter</label> <br> <!-- naming box -->
+                                                 <!-- radio will allow the user to click Y or N to receive letter -->
+                                                      <label>Yes</label>
+                                                            <input type="radio"  name="YorN" value="Yes">
+                                                      <label>No</label>
+                                                            <input type="radio" name="YorN" value="No"><br>
+                                     </div>
+
+                                     <button onclick=" validate() "type="submit" name="submit">Submit</button> <!-- submit box -->
+
+                                     <button onClick="reset()" type="reset" name="reset">Reset</button> <!-- reset box -->
+
+                            </form> <!-- end of form -->
+                           <!-- Table for the Editors and links back to their pages -->
+                            <table id="contactTable">   <!-- Open top row -->
+
+                                      <tr>   <!-- Table row-->
+                                                  <th>Meet The Page Editors</th> <!-- Table header cell-->
+                                      </tr> <!-- Table row closed-->
+                                      <tr> <!-- Table row-->
+                                            <td> <!-- Table cell-->
+                                                 <br><img src="images/Avatars/Dylan.png" alt="">
+                                            </td> <!-- Table cell closed-->
+                                                  <!-- https://avatarmaker.com/ to create the avatar -->
+                                            <td><!-- Table cell-->
+                                                 <h4><a href="Announcements.html">Announcements</a> </h4> <!-- anchor tag-->
+                                                        Dylan White <br>
+                                                        <p class="lspara">Always ready with the latest news</p>
+                                                        x21130515@student.ncirl.ie  <br>+353 087 205 4541
+                                            </td><!-- Table cell closed-->
+                                     <!-- Open top row -->
+                                    </tr><!-- Table row closed-->
+                                    <tr><!-- Table row-->
+                                            <td>
+                                                  <br><img src="images/Avatars/Daragh.png" alt="">
+                                            </td>
+                                        <!-- https://avatarmaker.com/ to create the avatar -->
+                                             <td>
+                                                  <h4><a href="sport.html">Sports</a> </h4>
+                                                        Daragh Walker <br>
+                                                        <p class="lspara"> Spors, sports and more Sport</p>
+                                                        x20248229@student.ncirl.ie <br>+353 086 893 2709
+                                            </td>
+                                       <!-- Open top row -->
+                                  </tr> <!-- Table row closed-->
+                                  <tr><!-- Table row -->
+                                            <td>
+                                                <br><img src="images/Avatars/holly.png" alt="">
+                                           </td>
+                                        <!-- https://avatarmaker.com/ to create the avatar -->
+                                            <td>
+                                                <h4> <a href="LocalScenery.html">Local Scenery</a> </h4>
+                                                        Holly Dowling <br>
+                                                        <p class="lspara">Be intuned with your local area and the best spots to visit</p>
+                                                        x21150117@student.ncirl.ie <br>+353 085 714 7089
+                                           </td>
+                                       <!-- Open top row -->
+                                  </tr> <!-- Table row closed-->
+
+                                </table>
+                           <!-- Unordered List for the Google Map link to Walnut Bay -->
+                                 <div id="Coordinates">
+                                   <!-- Id given to remove bullet points on page -->
+                                            <ul id="noBulletPoints" >
+                                                    <li><p id="CoorName">Walnut Bay Coordinates </p> </li>
+                                               <!-- Link under image when user clicks image they will be sent to Google Maps /Hover effect in action as well -->
+                                               <!-- Map Image is a screenshot from Google Maps with edits to show Walnut Bay -->
+                                                    <li> Click on Map to be brought to directions <br> <a href="https://goo.gl/maps/LggSfL8fCKJpBuoE7"><img class="LocationImages" src="images/walnutBay/WalnutBayMap.png" alt=""></a> </li>
+                                            </ul>
+                                  </div>
+                     <!-- close content -->
+                    </div>
+                     <!-- Close middle col -->
+                </div>
+                    <!-- Middle Right column -->
+                    <div class="col-sm-2 middle-right">
+                      <!-- Side image -->
+                        <!-- <img id="sideImageRight" src="images/town/dlHarbour1.jpg"  alt="..."> -->
+                    <!-- Middle Right column close  -->
+                    </div>
+
+              </div><!-- close of 3 col rows -->
+              <div class="row">
+
+                    <div class="col-sm-12 footer"> <!-- Footer column -->
+                            <ul id="noBulletPoints"> <!-- to remove list bullet point id name -->
+                                        <li>Walnut Bay County Council</li>
+                                        <li>Registered Website</li>
+
+                                        <a href="https://www.facebook.com/">Facebook</a> |<!--anchor link to Facebook -->
+                                        <a href="https://www.instagram.com/accounts/login/">Instagram</a> | <!--anchor link to Instagram -->
+                                        <a href="https://twitter.com/login">Twitter</a>  <!--anchor link to Twitter -->
+                             </ul>
+                    </div> <!-- Footer column closed -->
+              </div><!-- row  closed -->
+      <!-- Container closed -->
+      </div>
+      <script type="text/javascript">
+
+          //informs when blank lines arent filled in
+          function validate() {
+                    var firstName = document.getElementById('fName');   // declaring the variable names
+                    var Surname = document.getElementById('Surname');  // declaring the variable names
+                    var email = document.getElementById('email')  // declaring the variable names
+                    var contactNo = document.getElementById('contactNo')  // declaring the variable names
+                    var address1 = document.getElementById('address1')  // declaring the variable names
+                    var address2 = document.getElementById('address2')  // declaring the variable names
+                    var eircode = document.getElementById('eircode')  // declaring the variable names
+
+            // trim is to include the spacing
+            // Checking is box is left blank it will make the text in missing blank appear visible
+            if(firstName.value.trim()=="" && Surname.value.trim()==""&& email.value.trim()==""&& contactNo.value.trim()==""
+            && address1.value.trim()=="" && address2.value.trim()=="" && eircode.value.trim()==""){
+                      document.getElementById('fnMissing').style.visibility="visible"; // if the var is missing the message will show visible
+                      document.getElementById('surMissing').style.visibility="visible";// if the var is missing the message will show visible
+                      document.getElementById('emailMissing').style.visibility="visible";// if the var is missing the message will show visible
+                      document.getElementById('contactNoMissing').style.visibility="visible";// if the var is missing the message will show visible
+                      document.getElementById('address1Missing').style.visibility="visible";// if the var is missing the message will show visible
+                      document.getElementById('address2Missing').style.visibility="visible";// if the var is missing the message will show visible
+                      document.getElementById('eircodeMissing').style.visibility="visible";// if the var is missing the message will show visible
+                      return false;
+            }
+            else if (contactNo.value.trim().length < 6 ) {   //Password too short
+                      document.getElementById('contactNoShort').style.visibility="visible"; // if the var is missing the message will show visible
+                      return false;
+            }
+            else if (contactNo.value.trim().length > 11) {   //Password too long
+                      document.getElementById('contactNoLong').style.visibility="visible";// if the var is missing the message will show visible
+                      return false;
+            }
+            else{
+                      return true;
+              }
+            }
+            // validates the email by check if certain items appear
+            function validateEmail(){
+                      // declares variable
+                      var email =document.getElementById('email').value;
+                      // declares variable while looks for the certain sysmbols in a certain order
+                      var emailEx =/[a-zA-Z0-9.,<>?!$£%^&*']@[a-zA-Z0-9.,<>?!$£%^&*']/;
+                      // button check if you entered the email and it had the above sysmbols
+                      // if it doesnt a message will pop up
+                              if (emailEx.test(email)) {
+                                        document.getElementById('validEmail').style.visibility="visible";
+                              } else {
+                                        document.getElementById('invalidEmail').style.visibility="visible";
+                                      }
+            }
+
+            // resets the lines on the form
+            function reset(){
+                      document.getElementById('formContent').reset();
+            }
+
+            // background image to fill in the sides
+            // document.body.style.backgroundImage = "url('images/town/dlHarbour1.jpg')";
+
+            // sticky nav bar given by Daragh Walker
+            window.onscroll = function() {myFunction()};
+
+            var navbar = document.getElementById("navbar");
+            var sticky = navbar.offsetTop;
+
+            function myFunction() {
+              if (window.pageYOffset >= sticky) {
+                  navbar.classList.add("sticky")
+                  } else {
+                  navbar.classList.remove("sticky");
+                  }
+            }
+
+    </script>
+  </body>
+</html>

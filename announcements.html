@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Announcements</title>
+
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+
+		<!-- Required links for Bootstrap -->
+		<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"rel="stylesheet">
+		<scriptsrc="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js"></script>
+
+		<!-- link to the CSS file and Google fonts -->
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.googleapis.com">
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&family=Sacramento&family=Satisfy&display=swap" rel="stylesheet">
+
+		<!-- link to the Javascript
+		<script src="js/myscript.js"></script> -->
+
+	</head>
+	<body>
+		<div class="container-fluid>">
+			<!-- Header -->
+				<div class="col-sm-12 header">
+					<img src="images/walnutBay/WalnutBayLogo.png"id="logo" alt="logo">
+					<h1>Announcements</h1>
+					<h2>A Tough Walnut to Follow</h2>
+				</div>
+
+
+			<!-- nav -->
+			<div id="navbar">
+					<a href="index.html">Home</a>
+					<a href="localscenery.html">Local Scenary</a>
+					<a href="sport.html">Sport</a>
+					<a class="active" href="announcements.html">Announcements</a>
+					<a href="game.html">Game</a>
+					<a href="contactus.html">Contact Us</a>
+			</div>
+
+				<!-- Main content -->
+				<div class="content">
+				<div class="row middle">
+					<div class="col-sm-12">
+						<div class="card-group">
+						  <div class="card border-dark text-white bg-warning  mb-3">
+						    <img class="card-img-top" src="images/cardImages/dog.jpg" alt="Dog">
+						    <div class="card-body">
+						      <h5 class="card-title">Missing Dog</h5>
+						      <p class="card-text">Golden coat. Answers to Sparky<br>Ring me on 0800762762</p>
+						      <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+						    </div>
+						  </div>
+						  <div class="card border-dark text-white bg-warning  mb-3">
+						    <img class="card-img-top" src="images/cardImages/cat.jpg" alt="Cat">
+						    <div class="card-body">
+						      <h5 class="card-title">Missing cat</h5>
+						      <p class="card-text">browney orange color with cream. Answers to Whiskers<br>Ring me on 0800864864</p>
+						      <p class="card-text"><small class="text-muted">Last updated 5 days ago</small></p>
+						    </div>
+						  </div>
+						  <div class="card border-dark text-white bg-warning  mb-3">
+							<img class="card-img-top" src="images/cardImages/carnival.jpg" alt="Carnival">
+							<div class="card-body">
+							  <h5 class="card-title">Carnival</h5>
+							  <p class="card-text">There will be a halloween carnival.<br> On the 31st of October</p>
+							  <p class="card-text"><small class="text-muted">Last updated 1 month ago</small></p>
+							</div>
+						  </div>
+						  <div class="card border-dark text-white bg-warning  mb-3">
+							<img class="card-img-top" src="images/cardImages/theater.jpg" alt="Theater">
+							<div class="card-body">
+							  <h5 class="card-title">Local Theater</h5>
+							  <p class="card-text">The local theater will be doing Les Miserables.<br>On the 27th of September</p>
+							  <p class="card-text"><small class="text-muted">Last updated 2 weeks ago</small></p>
+							</div>
+						  </div>
+						  <div class="card border-dark text-white bg-warning  mb-3">
+							<img class="card-img-top" src="images/cardImages/market.jpg" alt="Market">
+							<div class="card-body">
+							  <h5 class="card-title">Christmas Markets</h5>
+							  <p class="card-text">The christmas markets will be running again this year.<br>They start on the 16th of november and run till january</p>
+							  <p class="card-text"><small class="text-muted">Last updated 3 days ago</small></p>
+							</div>
+						  </div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- Footer -->
+			<div class="row">
+			<!-- left side -->
+				<div class="col-sm-12 footer">
+					<ul id="noBulletPoints">
+						<li>Walnut Bay County Council</li>
+						<li>Registered Website</li>
+						<a href="https://www.facebook.com/">Facebook</a>
+						<a href="https://www.instagram.com/accounts/login/">instagram</a>
+						<a href="https://www.twitter.com/login">Twitter</a>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+			<script>
+			window.onscroll = function() {myFunction()};
+
+			var navbar = document.getElementById("navbar");
+			var sticky = navbar.offsetTop;
+
+			function myFunction() {
+			if (window.pageYOffset >= sticky) {
+				navbar.classList.add("sticky")
+			} else {
+			navbar.classList.remove("sticky");
+			}
+			}
+			</script>
+	</body>
+</html>
